@@ -1,7 +1,7 @@
 -- Customer Lifetime Value (CLV) Estimation
 -- Calculates estimated CLV based on transaction history
 
-SELECT 
+SELECT
     u.id AS customer_id,
     CONCAT(u.first_name, ' ', u.last_name) AS name,
     TIMESTAMPDIFF(MONTH, u.date_joined, CURRENT_DATE()) AS tenure_months,
