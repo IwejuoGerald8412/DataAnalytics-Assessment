@@ -1,8 +1,9 @@
-# DataAnalytics-assessment
+## DataAnalytics-assessment
 
-This repository contains my solutions to the SQL assessment questions. Below are explanations of my approach for each question.
+This repository contains my solutions to the Data analytics assessment questions. 
+Below are explanations of my approach for each question and challenges I faced.
 
-## Question 1: High-Value Customers with Multiple Products
+### Question 1: High-Value Customers with Multiple Products
 
 **Approach**:
 - Joined the users table with both savings and plans tables
@@ -14,7 +15,7 @@ This repository contains my solutions to the SQL assessment questions. Below are
 
 **Challenge**: Ensuring we only count distinct plans/accounts per customer and properly converting currency.
 
-## Question 2: Transaction Frequency Analysis
+### Question 2: Transaction Frequency Analysis
 
 **Approach**:
 - Created a CTE to calculate transactions per customer per month
@@ -34,7 +35,7 @@ This repository contains my solutions to the SQL assessment questions. Below are
 
 **Challenge**: Properly handling NULL values for accounts with no transactions and ensuring we consider both deposit and withdrawal transactions.
 
-## Question 4: Customer Lifetime Value (CLV) Estimation
+### Question 4: Customer Lifetime Value (CLV) Estimation
 
 **Approach**:
 - Calculated account tenure in months
@@ -45,9 +46,10 @@ This repository contains my solutions to the SQL assessment questions. Below are
 
 **Challenge**: Handling division by zero for new customers and ensuring the profit calculation was accurate.
 
-## Overall Challenges
+### Overall Challenges
 The main challenges were:
 1. Understanding the database schema and relationships between tables
-2. Properly converting currency values from kobo to naira
-3. Handling edge cases like new customers with zero tenure
-4. Ensuring all queries were optimized for performance
+2. Understanding the questions and the best approach to finding the solutions
+3. Properly converting currency values from kobo to naira
+4. Handling edge cases like new customers with zero tenure
+5. Ensuring all queries were optimized for performance
